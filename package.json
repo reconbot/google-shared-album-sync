@@ -12,33 +12,42 @@
     "unit-test": "mocha --opts lib/mocha.opts",
     "lint": "tsc && tslint lib/*.ts",
     "format": "tslint lib/*.ts --fix",
-    "build": "rm -rf dist-ts dist && tsc -p tsconfig-build.json && rollup -c rollup.config-esm.js && rollup -c rollup.config-umd.js && ts-node bundle-types",
-    "prepare": "npm run build"
+    "build": "rm -rf dist-ts dist && tsc -p tsconfig-build.json && rollup -c && ts-node bundle-types",
+    "prepare": "npm run build",
+    "download": "npm run build && node bin/download"
+  },
+  "bin": {
+    "download": "bin/download"
   },
   "keywords": [
     "typescript-library-template"
   ],
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "@microsoft/api-extractor": "^7.3.8",
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.5",
-    "@types/node": "^12.7.1",
+    "@microsoft/api-extractor": "^7.5.1",
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.1",
     "chai": "^4.2.0",
+    "googleapis": "^44.0.0",
+    "mkdirp": "^0.5.1",
     "mocha": "^6.2.0",
-    "prettier": "^1.15.2",
-    "rollup": "^1.11.0",
+    "node-fetch": "^2.6.0",
+    "prettier": "^1.18.2",
+    "readline-promise": "^1.0.4",
+    "rollup": "^1.25.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "through2-concurrent": "^2.0.0",
-    "ts-node": "^8.3.0",
-    "tslib": "^1.9.3",
-    "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.16.0",
+    "streaming-iterables": "^4.1.1",
+    "ts-node": "^8.4.1",
+    "tslib": "^1.10.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.6.4"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   }
 }

@@ -1,1 +1,1 @@
-export { serial } from './serial'
+export const foo = 'bar'
