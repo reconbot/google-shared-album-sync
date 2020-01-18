@@ -39,7 +39,7 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "streaming-iterables": "^4.1.1",
+    "streaming-iterables": "^4.1.2",
     "ts-node": "^8.4.1",
     "tslib": "^1.10.0",
     "tslint": "^5.20.0",
