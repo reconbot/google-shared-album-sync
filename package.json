@@ -41,7 +41,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "streaming-iterables": "^4.1.1",
     "ts-node": "^8.4.1",
-    "tslib": "^1.10.0",
+    "tslib": "^1.11.0",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
