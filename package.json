@@ -27,7 +27,7 @@
     "@microsoft/api-extractor": "^7.5.1",
     "@types/chai": "^4.2.3",
     "@types/mocha": "^7.0.0",
-    "@types/node": "^12.11.1",
+    "@types/node": "^13.13.5",
     "chai": "^4.2.0",
     "googleapis": "^44.0.0",
     "mkdirp": "^0.5.1",
